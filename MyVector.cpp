@@ -134,19 +134,4 @@ class MyVector
 		reverse_iterator rbegin() {return reverse_iterator(buff+num-1);} 
 		reverse_iterator rend() {return reverse_iterator(buff-1);} 
 };
-#endif
- 
-/*int main()
-{
-	MyVector<int> V(7,6);
-	cout<<"\nMyVector ban dau:";for(int i=0;i<V.size();i++) cout<<V[i]<<" ";
-	for(int i=0;i<V.size();i++) V[i]=i*i;
-	cout<<"\nMyVector binhphuong:";for(int i=0;i<V.size();i++) cout<<V[i]<<" ";
-	V.push_back(11);
-	V.push_back(13);
-	V.insert(2,20);
-	cout<<"\nMyVector :";for(int i=0;i<V.size();i++) cout<<V[i]<<" ";
-	cout<<"\nDuyet :";for(MyVector<int>::iterator it=V.begin();it!=V.end();it++) cout<<*it<<"\t";	
-	cout<<"\nDuyet auto : ";for(auto x:V) cout<<x<<" ";
-	cout<<"\nNguoc : "; for(auto it=V.rbegin();it!=V.rend();it++) cout<<*it<<" ";
-}*/
+
